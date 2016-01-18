@@ -1,4 +1,5 @@
-var express = require('express');
+//var express = require('express');
+var feathers = require('feathers');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -8,7 +9,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-var app = express();
+var app = feathers();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -20,7 +21,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(feathers.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
