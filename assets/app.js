@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('sailstest', [
+angular.module('open-firebase', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',

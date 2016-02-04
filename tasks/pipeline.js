@@ -18,7 +18,8 @@ var tmpPath = '.tmp/public/';
 var cssFilesToInject = [
   'styles/bootstrap.css',
   'styles/bootstrap-theme.css',
-  'styles/**/*.css'
+  'styles/**/*.css',
+  '*.css'
 ];
 
 
@@ -34,7 +35,7 @@ var jsFilesToInject = [
   'js/dependencies/jquery.js',
 
   // Dependencies like jQuery, or Angular are brought in here
-  'js/dependencies/**/*.js', 'js/app.js', 'js/app.js',
+  'js/dependencies/**/*.js',
   'js/services.js',
   'js/controllers.js',
   'js/filters.js',
@@ -43,6 +44,10 @@ var jsFilesToInject = [
   'js/controllers.js',
   'js/filters.js',
   'js/directives.js',
+
+  'view1/view1.js',
+  'view2/view2.js',
+
 
   'js/app.js',
   'js/services.js',
@@ -50,9 +55,12 @@ var jsFilesToInject = [
   'js/filters.js',
   'js/directives.js',
 
+  'components/**/*.js',
+
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/**/*.js'
+  'js/**/*.js',
+  'app.js'
 
   // Use the "exclude" operator to ignore files
   // '!js/ignore/these/files/*.js'
