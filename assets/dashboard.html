@@ -16,8 +16,17 @@
 	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="bower_components/bootstrap/dist/css/bootstrap-social.css" rel="stylesheet">
-	<link href="styles/my.css" rel="stylesheet">
+	<link href="styles/my3.css" rel="stylesheet">
 </head>
+<style>
+form.ex1 {
+    padding: 0.3cm;
+}
+
+div.ex2 {
+    padding: 1.cm;
+}
+</style>
 <body>
 
 
@@ -31,19 +40,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><img src="img/logo.png" height=20 width=81></a>
+				<a class="navbar-brand" href="dashboard.html"><img src="img/logo.png" height=20 width=81></a>
 			</div>
-			 <div id="navbar" class="navbar-collapse collapse">
-				 <ul class="nav navbar-nav navbar-center">
-					 <li class="active"><a href="index.html"> Overview </a></li>
-					 <li><a href="aboutus.html"> About</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-            <li><a id="loginbutton" href="login.html">
-            <span class="glyphicon glyphicon-log-in"></span> Login</a>
-            </li>
-        </ul>
-			 </div>
+			 
 		</div>
 	</nav>
 
@@ -54,22 +53,51 @@
 		<div class="container">
 			<div class="row row-header">
 				<div class="col-xs-12 col-sm-8">
-					<h1>FireBase Open</h1>
+					<h1> Welcome to OpenFirebase</h1>
 					<p style="padding:40px;"></p>
-					<h2>Build Extraordinary Apps</h2>
+					<h3>Your account has been created successfully! </h3>
 				</div>
-				
-				<div class="col-xs-12 col-sm-2">
-					<p style="padding:20px;"></p>
-					<img src="img/logo.png" class="img-responsive">
+				<div class="col-xs-12 col-sm-4">
+					<div class="card card--animated">
+						<form role="form" class="ex1" id="form1">
+						  <div class="form-group">
+						    <label for="text">App Name:</label>
+						    <input type="text" class="form-control" id="name">
+						  </div>
+						  <div class="form-group">
+						    <label for="text">App URL:</label>
+						    <input type="text" class="form-control" id="url">
+						  </div>
+						  <button type="submit" class="btn btn-default">Create App</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
+	<div class="container">
+		<div class="row row-content">
+			<!-- <div class="card  card--z-0"></div>
+			<div class="card  card--z-1"></div>
+			<div class="card  card--z-2"></div>
+			<div class="card  card--z-3"></div>
+			<div class="card  card--z-4"></div> -->
+			
 
+			
 
+			<div class="card  card--z-5 buttonHolder">
+				<p></p>
+				<p></p>
+				<p>My First APP</p>
+				<p></p>
+				<p></p>
+				<a href="myapp.html" role="button" class="btn btn-default">Manage App</a>
+			</div>
 
+		</div>
+	</div>
 
 
 

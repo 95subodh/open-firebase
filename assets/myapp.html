@@ -16,7 +16,7 @@
 	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="bower_components/bootstrap/dist/css/bootstrap-social.css" rel="stylesheet">
-	<link href="styles/my.css" rel="stylesheet">
+	<link href="styles/my4.css" rel="stylesheet">
 </head>
 <body>
 
@@ -31,41 +31,52 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><img src="img/logo.png" height=20 width=81></a>
+				<a class="navbar-brand" href="dashboard.html"><img src="img/logo.png" height=20 width=81></a>
 			</div>
 			 <div id="navbar" class="navbar-collapse collapse">
 				 <ul class="nav navbar-nav navbar-center">
-					 <li class="active"><a href="index.html"> Overview </a></li>
-					 <li><a href="aboutus.html"> About</a></li>
+					 <li class="active"><a href="myapp.html"> Dashboard </a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-            <li><a id="loginbutton" href="login.html">
-            <span class="glyphicon glyphicon-log-in"></span> Login</a>
-            </li>
-        </ul>
+		            <li><a id="logoutbutton" href="login.html">
+		            <span class="glyphicon glyphicon-log-out"></span> Logout</a>
+		            </li>
+		        </ul>
 			 </div>
 		</div>
 	</nav>
 
-	<header class="jumbotron">
-
-		<!-- Main component for a primary marketing message or call to action -->
-		
-		<div class="container">
-			<div class="row row-header">
-				<div class="col-xs-12 col-sm-8">
-					<h1>FireBase Open</h1>
-					<p style="padding:40px;"></p>
-					<h2>Build Extraordinary Apps</h2>
-				</div>
-				
-				<div class="col-xs-12 col-sm-2">
-					<p style="padding:20px;"></p>
-					<img src="img/logo.png" class="img-responsive">
-				</div>
-			</div>
+	<div class="container">
+		<div class="row">
+		  <div class="col-sm-3">
+		    <div class="sidebar-nav">
+		      <div class="navbar navbar-default" role="navigation">
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <span class="visible-xs navbar-brand">Sidebar menu</span>
+		        </div>
+		        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+		          <ul class="nav navbar-nav">
+		            <li class="active"><a href="#">Menu Item 1</a></li>
+		            <li><a href="#">Menu Item 2</a></li>
+		            <li><a href="#">Menu Item 3</a></li>
+		            <li><a href="#">Menu Item 4</a></li>
+		            <li><a href="#">More Features <span class="badge">Coming Soon</span></a></li>
+		          </ul>
+		        </div><!--/.nav-collapse -->
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-9">
+		    Something will be here Eventually
+		  </div>
 		</div>
-	</header>
+	</div>
 
 
 
